@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Traffic Light System Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="/static/css/dashboard.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <span class="navbar-brand mb-0 h1">
+                <i class="fas fa-traffic-light"></i>
+                Smart Traffic Light System
+            </span>
+            <div class="d-flex align-items-center">
+                <span class="badge bg-success me-3" id="connection-status">
+                    <i class="fas fa-circle"></i> Connected
+                </span>
+                <button class="btn btn-danger btn-sm" id="emergency-btn" onclick="toggleEmergency()">
+                    <i class="fas fa-exclamation-triangle"></i> Emergency
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid mt-3">
+        <!-- System Status Row -->
+        <div class="row mb-4">
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">System Status</h5>
+                        <div class="status-indicator" id="system-status">
+                            <i class="fas fa-circle text-success"></i>
+                            <span>Running</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Active Cameras</h5>
+                        <h3 class="text-primary" id="active-cameras">0</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Processing FPS</h5>
+                        <h3 class="text-info" id="processing-fps">0.0</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Total Detections</h5>
+                        <h3 class="text-warning" id="total-detections">0</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Traffic Light Controls -->
+        <div class="row mb-4">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h5><i class="fas fa-traffic-light"></i> Traffic Light Status</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="row" id="traffic-lights-container">
+                            <!-- Traffic lights will be dynamically populated -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Camera Feeds and Analytics -->
+        <div class="row">
+            <!-- Camera Feeds -->
+            <div class="col-lg-8">
+                <div class="card">
+                    <div class="card-header">
+                        <h5><i class="fas fa-video"></i> Live Camera Feeds</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="row" id="camera-feeds">
+                            <!-- Camera feeds will be dynamically populated -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Traffic Analytics -->
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h5><i class="fas fa-chart-bar"></i> Traffic Analytics</h5>
+                    </div>
+                    <div class="card-body">
+                        <div id="analytics-container">
+                            <!-- Analytics will be dynamically populated -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Control Panel -->
+                <div class="card mt-3">
+                    <div class="card-header">
+                        <h5><i class="fas fa-cogs"></i> Control Panel</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="mb-3">
+                            <label class="form-label">Emergency Direction</label>
+                            <select class="form-select" id="emergency-direction">
+                                <option value="">All Directions</option>
+                                <option value="north">North</option>
+                                <option value="south">South</option>
+                                <option value="east">East</option>
+                                <option value="west">West</option>
+                            </select>
+                        </div>
+                        <button class="btn btn-warning w-100 mb-2" onclick="setEmergencyMode()">
+                            <i class="fas fa-exclamation-triangle"></i> Activate Emergency
+                        </button>
+                        <button class="btn btn-success w-100" onclick="clearEmergencyMode()">
+                            <i class="fas fa-check"></i> Clear Emergency
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Emergency Modal -->
+    <div class="modal fade" id="emergencyModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-danger text-white">
+                    <h5 class="modal-title">
+                        <i class="fas fa-exclamation-triangle"></i> Emergency Mode
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Emergency mode is currently active. All traffic lights are controlled manually.</p>
+                    <div id="emergency-status"></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" onclick="clearEmergencyMode()">
+                        Clear Emergency
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+    <script src="/static/js/dashboard.js"></script>
+</body>
+</html>
