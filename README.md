@@ -1,122 +1,13 @@
-# CO2 Emission Trend Analyzer for India 🌍
+# 💫 About Me:
+🔭 I’m currently working on C language,Python,JavaScript,HTML & CSS.<br>👯 I’m looking to collaborate on https://github.com/ishikadubey1105<br>🤝 I’m looking for help with AI & ML models.<br>🌱 I’m currently learning Machine Learning Algorithms.<br>
 
-A comprehensive Python-based tool for analyzing CO2 emission trends in India with predictive modeling capabilities.
 
-## Features
+## 🌐 Socials:
+[![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/ishikadubey_1105) [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/www.linkedin.com/in/ishika-dubey) [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:ishikadubey2020@gmail.com) 
 
-✅ **Real-time Data Collection**: Automatically fetches CO2 emission data from World Bank API
-✅ **Comprehensive Analysis**: Statistical analysis of historical CO2 emission trends
-✅ **Advanced Visualizations**: Multiple charts showing trends, growth rates, and moving averages
-✅ **Predictive Modeling**: Machine learning models (Linear Regression, Random Forest) for future predictions
-✅ **Detailed Reporting**: Generates comprehensive analysis reports
-✅ **Fallback Data**: Uses sample data if API is unavailable
+# 💻 Tech Stack:
+![C](https://img.shields.io/badge/c-%2300599C.svg?style=flat&logo=c&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=flat&logo=css3&logoColor=white) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=flat&logo=html5&logoColor=white) ![Python](https://img.shields.io/badge/python-3670A0?style=flat&logo=python&logoColor=ffdd54) ![Google Cloud](https://img.shields.io/badge/GoogleCloud-%234285F4.svg?style=flat&logo=google-cloud&logoColor=white) ![Azure](https://img.shields.io/badge/azure-%230072C6.svg?style=flat&logo=microsoftazure&logoColor=white) ![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=flat&logo=amazon-aws&logoColor=white) ![Firebase](https://img.shields.io/badge/firebase-%23039BE5.svg?style=flat&logo=firebase) ![Anaconda](https://img.shields.io/badge/Anaconda-%2344A833.svg?style=flat&logo=anaconda&logoColor=white) ![Django](https://img.shields.io/badge/django-%23092E20.svg?style=flat&logo=django&logoColor=white) ![Firebase](https://img.shields.io/badge/firebase-a08021?style=flat&logo=firebase&logoColor=ffcd34) ![Adobe](https://img.shields.io/badge/adobe-%23FF0000.svg?style=flat&logo=adobe&logoColor=white) ![Adobe Acrobat Reader](https://img.shields.io/badge/Adobe%20Acrobat%20Reader-EC1C24.svg?style=flat&logo=Adobe%20Acrobat%20Reader&logoColor=white) ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=flat&logo=figma&logoColor=white) ![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=flat&logo=Matplotlib&logoColor=black) ![mlflow](https://img.shields.io/badge/mlflow-%23d9ead3.svg?style=flat&logo=numpy&logoColor=blue) ![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=flat&logo=numpy&logoColor=white) ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=flat&logo=pandas&logoColor=white) ![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=flat&logo=TensorFlow&logoColor=white) ![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=flat&logo=PyTorch&logoColor=white) ![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=flat&logo=scikit-learn&logoColor=white) ![Arduino](https://img.shields.io/badge/-Arduino-00979D?style=flat&logo=Arduino&logoColor=white) ![Meta](https://img.shields.io/badge/Meta-%230467DF.svg?style=flat&logo=Meta&logoColor=white) ![Portfolio](https://img.shields.io/badge/Portfolio-%23000000.svg?style=flat&logo=firefox&logoColor=#FF7139)
+<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
 
-## Dataset Sources
 
-- **Primary**: World Bank Open Data API
-  - CO2 emissions per capita (EN.ATM.CO2E.PC)
-  - Total CO2 emissions in kilotons (EN.ATM.CO2E.KT)
-- **Secondary**: EDGAR (Emissions Database for Global Atmospheric Research)
-- **Backup**: Generated sample data based on historical trends
-
-## Installation
-
-1. Clone or download the project files
-2. Install dependencies:
-```bash
-pip install -r requirements.txt
-```
-
-## Usage
-
-### Quick Start
-```bash
-python co2_analyzer.py
-```
-
-### What the analyzer does:
-1. **Data Collection**: Fetches latest CO2 emission data for India
-2. **Trend Analysis**: Calculates growth rates, statistics, and patterns
-3. **Visualization**: Creates multiple charts showing different aspects of emissions
-4. **Modeling**: Builds and compares machine learning models
-5. **Prediction**: Forecasts future CO2 emissions for the next 10 years
-6. **Reporting**: Generates a comprehensive analysis report
-
-## Output Files
-
-The analyzer generates several output files:
-
-- `co2_trends_analysis.png` - Multi-panel chart showing historical trends
-- `co2_predictions.png` - Chart with historical data and future predictions
-- `co2_analysis_report.txt` - Detailed text report with findings and recommendations
-
-## Key Metrics Analyzed
-
-- **CO2 Per Capita**: Metric tons per person
-- **Total CO2 Emissions**: Kilotons annually
-- **Growth Rates**: Year-over-year percentage changes
-- **Moving Averages**: Smoothed trend lines
-- **Future Projections**: 10-year forecasts
-
-## Models Used
-
-1. **Linear Regression**: For trend-based predictions
-2. **Random Forest**: For complex pattern recognition
-3. **Model Selection**: Automatically chooses best performing model based on R² score
-
-## Technical Details
-
-### Dependencies
-- pandas: Data manipulation and analysis
-- numpy: Numerical computations
-- matplotlib/seaborn: Data visualization
-- scikit-learn: Machine learning models
-- requests: API data fetching
-- statsmodels: Statistical analysis
-
-### Data Processing
-- Handles missing data points
-- Calculates derived metrics (growth rates, moving averages)
-- Validates data quality and consistency
-- Provides fallback sample data if API fails
-
-## Sample Analysis Results
-
-The analyzer provides insights such as:
-- Average CO2 per capita trends over time
-- Peak emission years and values
-- Annual growth rate patterns
-- Future emission projections
-- Policy recommendations
-
-## Customization
-
-You can modify the analyzer by:
-- Changing the prediction timeframe (default: 10 years)
-- Adding new visualization types
-- Incorporating additional data sources
-- Modifying model parameters
-- Adding new metrics and calculations
-
-## Contributing
-
-Feel free to enhance the analyzer by:
-- Adding more sophisticated models
-- Including additional countries for comparison
-- Integrating more data sources
-- Improving visualizations
-- Adding interactive features
-
-## Data Sources and Citations
-
-- World Bank Open Data: https://data.worldbank.org/
-- EDGAR Database: https://edgar.jrc.ec.europa.eu/
-- Our World in Data: https://ourworldindata.org/
-
-## License
-
-This project is open source and available under the MIT License.
-
----
-
-**Note**: This analyzer is designed for educational and research purposes. For official policy decisions, please consult authoritative sources and conduct additional validation.
+ policy decisions, please consult authoritative sources and conduct additional validation.
