@@ -1,5 +1,5 @@
 # 💫 About Me:
-🔭 I’m currently working on C language,Python,JavaScript,HTML & CSS.<br>👯 I’m looking to collaborate on https://github.com/ishikadubey1105<br>🤝 I’m looking for help with AI & ML models.<br>🌱 I’m currently learning Machine Learning Algorithms.<br>
+🔭 I’m currently working on C language,Python,Java,SQL,HTML & CSS.<br>👯 I’m looking to collaborate on https://github.com/ishikadubey1105<br>🤝 I’m looking for help with AI & ML models.<br>🌱 I’m currently learning Machine Learning Algorithms.<br>
 
 
 ## 🌐 Socials:
