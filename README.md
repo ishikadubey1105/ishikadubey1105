@@ -1,13 +1,41 @@
-# 💫 About Me:
-🔭 I’m currently working on C language,Python,Java,SQL,HTML & CSS.<br>👯 I’m looking to collaborate on https://github.com/ishikadubey1105<br>🤝 I’m looking for help with AI & ML models.<br>🌱 I’m currently learning Machine Learning Algorithms.<br>
+# Ishika Dubey
 
+**B.Tech, Computer Science (AI & ML)** — Symbiosis Institute of Technology, Nagpur<br>
+**Minor in Artificial Intelligence** — IIT Ropar
 
-## 🌐 Socials:
-[![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/ishikadubey_1105) [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/www.linkedin.com/in/ishika-dubey) [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:ishikadubey2020@gmail.com) 
+I build applied ML and LLM-agent systems, with a bias toward things that actually run: an evaluation story, a deployment path, and a README you can follow. Currently going deep on retrieval-augmented generation, multi-agent orchestration, and moving models out of notebooks and behind an endpoint.
 
-# 💻 Tech Stack:
-![C](https://img.shields.io/badge/c-%2300599C.svg?style=flat&logo=c&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=flat&logo=css3&logoColor=white) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=flat&logo=html5&logoColor=white) ![Python](https://img.shields.io/badge/python-3670A0?style=flat&logo=python&logoColor=ffdd54) ![Google Cloud](https://img.shields.io/badge/GoogleCloud-%234285F4.svg?style=flat&logo=google-cloud&logoColor=white) ![Azure](https://img.shields.io/badge/azure-%230072C6.svg?style=flat&logo=microsoftazure&logoColor=white) ![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=flat&logo=amazon-aws&logoColor=white) ![Firebase](https://img.shields.io/badge/firebase-%23039BE5.svg?style=flat&logo=firebase) ![Anaconda](https://img.shields.io/badge/Anaconda-%2344A833.svg?style=flat&logo=anaconda&logoColor=white) ![Django](https://img.shields.io/badge/django-%23092E20.svg?style=flat&logo=django&logoColor=white) ![Firebase](https://img.shields.io/badge/firebase-a08021?style=flat&logo=firebase&logoColor=ffcd34) ![Adobe](https://img.shields.io/badge/adobe-%23FF0000.svg?style=flat&logo=adobe&logoColor=white) ![Adobe Acrobat Reader](https://img.shields.io/badge/Adobe%20Acrobat%20Reader-EC1C24.svg?style=flat&logo=Adobe%20Acrobat%20Reader&logoColor=white) ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=flat&logo=figma&logoColor=white) ![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=flat&logo=Matplotlib&logoColor=black) ![mlflow](https://img.shields.io/badge/mlflow-%23d9ead3.svg?style=flat&logo=numpy&logoColor=blue) ![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=flat&logo=numpy&logoColor=white) ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=flat&logo=pandas&logoColor=white) ![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=flat&logo=TensorFlow&logoColor=white) ![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=flat&logo=PyTorch&logoColor=white) ![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=flat&logo=scikit-learn&logoColor=white) ![Arduino](https://img.shields.io/badge/-Arduino-00979D?style=flat&logo=Arduino&logoColor=white) ![Meta](https://img.shields.io/badge/Meta-%230467DF.svg?style=flat&logo=Meta&logoColor=white) ![Portfolio](https://img.shields.io/badge/Portfolio-%23000000.svg?style=flat&logo=firefox&logoColor=#FF7139)
-<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
+**Open to SDE / AI-ML / Data Science internships and full-time roles.**
 
+[Email](mailto:ishikadubey2020@gmail.com) · [LinkedIn](https://linkedin.com/in/ishika-dubey)
 
- policy decisions, please consult authoritative sources and conduct additional validation.
+---
+
+## Featured work
+
+| Project | What it does | Stack |
+| --- | --- | --- |
+| **[Atmosphera](https://github.com/ishikadubey1105/atmosphera-book-recommender)** | Book discovery platform combining collaborative recommendations with mood-based curation. The most engineered thing here — CI, tests, evaluation notebook. | TypeScript, React, Python, GitHub Actions |
+| **[Multi-Agent Campaign System](https://github.com/ishikadubey1105/AI-agents-Course)** | Orchestrator routing work across specialist LLM agents — market research, copywriting, creative direction, review — to produce a complete campaign brief. | Python, LLM APIs, agent orchestration |
+| **[Smart Health Tracker Insights](https://github.com/ishikadubey1105/Smart-Health-Tracker-Insights)** | Predicts sleep quality and stress levels from wearable fitness data. Full pipeline: EDA, feature engineering, model comparison. | Python, scikit-learn, pandas, Matplotlib |
+| **[Student Stress Prediction](https://github.com/ishikadubey1105/Student-Stress-Level-Prediction-using-ML)** | Benchmarks several classifiers on academic stress data with cross-validation, confusion matrices and a served prediction endpoint. | Python, scikit-learn, Flask |
+| **[SmartSpend](https://github.com/ishikadubey1105/SmartSpend-Cloud-Native-Expense-Manager)** | Cloud-native expense manager — containerised services, CI pipeline, web and mobile clients. | Python, Docker, React, CI/CD |
+| **[SIT Query Chatbot](https://github.com/ishikadubey1105/sit-faq-chatbot)** | Hybrid retrieval chatbot for institute queries: TF-IDF retrieval with an ML intent classifier fallback. | Python, NLP, Flask |
+
+---
+
+## Toolkit
+
+**Languages** &nbsp; Python · C · Java · SQL · TypeScript / JavaScript<br>
+**ML & Data** &nbsp; scikit-learn · pandas · NumPy · TensorFlow · Matplotlib · Seaborn<br>
+**LLM & Agents** &nbsp; RAG pipelines · multi-agent orchestration · prompt engineering<br>
+**Backend & Infra** &nbsp; Flask · FastAPI · Docker · Google Cloud · Firebase · GitHub Actions<br>
+**Databases** &nbsp; MySQL · PostgreSQL · Supabase
+
+---
+
+## Currently
+
+- Building an evaluated RAG system with retrieval metrics, not vibes
+- Working through DSA in Python daily
+- Preparing for placement season
